@@ -66,7 +66,7 @@ function App() {
                 <div>user balance: {balance}</div>
                 <button onClick={connectWallet}>connect</button>
                 <button onClick={sendTransaction}>send</button>
-                <div>update test!</div>
+                <div>update test!!</div>
             </header>
         </div>
     );
