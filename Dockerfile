@@ -7,4 +7,6 @@ RUN npm install
 COPY package.json /home/neond/neond-front/package.json
 COPY . /home/neond/neond-front
 
+EXPOSE 3000:3000
+
 CMD ["npm start"]
