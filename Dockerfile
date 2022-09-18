@@ -3,12 +3,12 @@ FROM node:16.16.0 as builder
 RUN pwd
 RUN whoami
 
-RUN mkdir /neond/neond-front
-WORKDIR /neond/neond-front
+RUN mkdir /neond
+WORKDIR /neond
 RUN npm install
 
-COPY package.json /neond/neond-front/package.json
-COPY . /neond/neond-front
+COPY package.json /neond/package.json
+COPY . /neond
 
 EXPOSE 3000:3000
 
