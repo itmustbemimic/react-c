@@ -5,10 +5,11 @@ RUN whoami
 
 RUN mkdir /neond
 WORKDIR /neond
-RUN npm install
 
 COPY package.json /neond/package.json
 COPY . /neond
+
+RUN npm install
 
 EXPOSE 3000:3000
 
