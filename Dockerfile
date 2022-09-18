@@ -1,5 +1,8 @@
 FROM node:16.16.0 as builder
 
+RUN pwd
+RUN whoami
+
 RUN mkdir ./neond/neond-front
 WORKDIR ./neond/neond-front
 RUN npm install
